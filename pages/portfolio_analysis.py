@@ -6,9 +6,15 @@ import numpy as np
 import plotly.express as px
 from io import BytesIO
 from fpdf import FPDF
-
+import os
 # --- Stock Data Functions ---
+def clear_yfinance_cache():
+    cache_file = '/opt/render/.cache/py-yfinance/tkr-tz.csv'
+    if os.path.exists(cache_file):
+        os.remove(cache_file) 
+
 def fetch_stock_data(tickers, start_date, end_date):
+    clear_yfinance_cache()
     data = {}
     for ticker in tickers:
         stock = yf.Ticker(ticker)
@@ -17,6 +23,7 @@ def fetch_stock_data(tickers, start_date, end_date):
     return pd.DataFrame(data)
 
 def fetch_benchmark_data(start_date, end_date):
+    clear_yfinance_cache()
     benchmark_ticker = "^GSPC" 
     benchmark_data = yf.Ticker(benchmark_ticker)
     df = benchmark_data.history(start=start_date, end=end_date)

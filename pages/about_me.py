@@ -79,7 +79,7 @@ with projects_cols[0]:
     """)
 
 with projects_cols[1]:
-    st.image("./assets/Otodom.jpg", use_container_width=True, caption="Otodom Web Scraper")  
+    st.image("./assets/OtoDom.jpg", use_container_width=True, caption="Otodom Web Scraper")  
     st.markdown(f"""
     [Otodom Web Scraper](https://github.com/KevinVanWallendael/OtodomScraper)
     """)
