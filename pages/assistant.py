@@ -1,8 +1,18 @@
+import os
 from openai import OpenAI
 import streamlit as st
+import shutil
+import toml 
 
-# Set up OpenAI API key from secrets.toml
-client = OpenAI(api_key=st.secrets["openai"]["api_key"])
+if os.getenv("RENDER"):
+    secrets_src = "/etc/secrets/secrets.toml"
+    secrets_dest = os.path.expanduser("~/.streamlit/secrets.toml")
+
+    os.makedirs(os.path.dirname(secrets_dest), exist_ok=True)
+    shutil.copy(secrets_src, secrets_dest)
+
+openai_api_key = st.secrets["openai"]["api_key"]
+client = OpenAI(api_key=openai_api_key)
 
 # Streamlit app UI
 st.title("Wally - Personal Chatbot")

@@ -76,11 +76,10 @@ with tabs[0]:
         * **Reporting and Visualization:** Creating clear and concise reports and graphs.
     """)
 
-    # st.write("""
-    # Technical Flow Chart
-    # """)
+    st.write("### Technical Flow Chart")
+    with st.expander("View Technical Flow Chart"):
+        st.image("./assets/StockFlow.png", use_container_width=True, caption="Stock Code Logic Flow")
 
-    # st.image("./Assets/StockFlow.png", use_container_width=False, caption="Stock Code Logic FLow")  
 
     st.header("My Approach")
 

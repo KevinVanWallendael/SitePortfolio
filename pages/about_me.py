@@ -73,19 +73,19 @@ st.header("Featured Projects")
 projects_cols = st.columns(3)
 
 with projects_cols[0]:
-    st.image("./Assets/StockPortfolio.jpg", use_container_width=True, caption="Portfolio Analysis")  
+    st.image("./assets/StockPortfolio.jpg", use_container_width=True, caption="Portfolio Analysis")  
     st.markdown(f"""
     [Portfolio Analysis](https://github.com/KevinVanWallendael/StockPortfolioAnalyzer)
     """)
 
 with projects_cols[1]:
-    st.image("./Assets/Otodom.jpg", use_container_width=True, caption="Otodom Web Scraper")  
+    st.image("./assets/Otodom.jpg", use_container_width=True, caption="Otodom Web Scraper")  
     st.markdown(f"""
     [Otodom Web Scraper](https://github.com/KevinVanWallendael/OtodomScraper)
     """)
 
 with projects_cols[2]:
-    st.image("./Assets/PredictionModel.jpg", use_container_width=True, caption="Warsaw Housing Prediction") 
+    st.image("./assets/PredictionModel.jpg", use_container_width=True, caption="Warsaw Housing Prediction") 
     st.markdown(f"""
     [Warsaw Housing Prediction](https://github.com/KevinVanWallendael/HousingPricePrediction)
     """)
