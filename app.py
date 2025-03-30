@@ -38,7 +38,6 @@ pg = st.navigation(
     }
 )
 
-st.logo("assets/logo_tansparent.png", size="large")
 st.sidebar.markdown("Made with ❤️ by [Kevin](https://www.linkedin.com/in/kevin-van-wallendael/)")
 
 pg.run()
