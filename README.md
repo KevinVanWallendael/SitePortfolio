@@ -29,6 +29,7 @@ The portfolio website includes the following key features:
 
 The project is organized as follows:
 
+```
 ├── README.md         # This file
 ├── app.py            # Main Streamlit application
 ├── pages/            # Directory containing individual page scripts
@@ -46,6 +47,7 @@ The project is organized as follows:
 └── models/           # Directory for machine learning models (Housing Project)
 ├── housing_price_predictor_model.pkl
 └── preprocessor.pkl
+```
 
 ## Setup and Installation
 
@@ -85,5 +87,5 @@ This will start the Streamlit server, and you can view the website in your brows
 
 Contact
 Name: Kevin Van Wallendael
-[LinkedIn] (https://www.linkedin.com/in/kevin-van-wallendael/)
-[GitHub] (https://github.com/KevinVanWallendael)
+[LinkedIn](https://www.linkedin.com/in/kevin-van-wallendael/)
+[GitHub](https://github.com/KevinVanWallendael)
