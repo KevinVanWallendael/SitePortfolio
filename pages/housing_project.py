@@ -18,7 +18,7 @@ forma_wlasnosci_options = ['pełna własność', 'spółdzielcze własnościowe'
 typ_ogloszeniodawcy_options = ['prywatne', 'agencja']
 neighborhood_options = ['Śródmieście', 'Mokotów', 'Wola', 'Ursynów', 'Bielany', 'Praga-Południe', 'Targówek', 'Bemowo', 'Ochota', 'Praga-Północ', 'Białołęka', 'Wawer', 'Żoliborz', 'Wilanów', 'Rembertów', 'Wesoła', 'Ursus']
 
-st.title("🏡 Warsaw Housing Price Predictor")
+st.markdown("# 🏡 Warsaw Housing Price Predictor")
 st.markdown("Welcome! Fill out the details below to estimate the price of a property in Warsaw.")
 
 with st.expander("Property Details"):

@@ -12,11 +12,11 @@ project_1_page = st.Page(
     icon="📊",
 )
 
-project_2_page = st.Page(
-    "pages/assistant.py",
-    title="Chatbot Assisstant",
-    icon="🤖",
-)
+# project_2_page = st.Page(
+#     "pages/assistant.py",
+#     title="Chatbot Assisstant",
+#     icon="🤖",
+# )
 
 project_3_page = st.Page(
     "pages/housing_project.py",
@@ -24,17 +24,17 @@ project_3_page = st.Page(
     icon="🏡",
 )
 
-project_4_page = st.Page(
-    "pages/blog.py",
-    title="Blog",
-    icon="👨🏼‍💻",
-)
+# project_4_page = st.Page(
+#     "pages/blog.py",
+#     title="Blog",
+#     icon="👨🏼‍💻",
+# )
 
 
 pg = st.navigation(
     {
-        "Info": [about_page, project_4_page],
-        "Projects": [project_1_page, project_3_page, project_2_page],
+        # "Info": [about_page],
+        "Projects": [project_1_page, project_3_page],
     }
 )
 

@@ -161,7 +161,8 @@ def comparison_indicator(portfolio_value, benchmark_value):
     return "📈" if portfolio_value > benchmark_value else "📉"
 
 # --- Streamlit Interface ---
-st.title("Portfolio Performance Tracker")
+st.markdown("# 📈 Portfolio Performance Tracker")
+st.markdown("Analyze the performance of your stock portfolio against the S&P 500 benchmark.")
 
 with st.expander("Portfolio Inputs"):
     col1, col2 = st.columns(2)
